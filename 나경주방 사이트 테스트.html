@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>나경주방 | 상업용 주방기기 전문</title>
+
+    <meta name="description" content="상업용 주방기기 설계, 제작, 시공, A/S 전문 기업 나경주방">
+    <meta name="keywords" content="주방기기, 식기세척기, 주방설비, 천안, 급식주방, A/S, 세제">
+
+    <!-- SEO / 공유용 -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="나경주방">
+
+    <meta property="og:title" content="나경주방 | 상업용 식기세척기 및 세제납품 전문">
+    <meta property="og:description" content="설계·제작·시공·A/S 전문 주방기기 기업">
+    <meta property="og:image" content="https://cdn.phototourl.com/free/2026-07-02-53c92674-4c09-41af-9f50-8cf27f132d03.png">
+    <meta property="og:url" content="https://your-domain.com">
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Pretendard",sans-serif;
+        }
+
+        body {
+            background: #fff;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        /* HEADER */
+        header {
+            position: sticky;
+            top: 0;
+            background: #0B3D91;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 8%;
+            z-index: 1000;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+            .logo-area img {
+                width: 40px;
+                height: 40px;
+            }
+
+        .logo-text {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 18px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        /* HERO */
+        .hero {
+            height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+            background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url("https://cdn.phototourl.com/free/2026-07-02-53c92674-4c09-41af-9f50-8cf27f132d03.png") center/cover;
+        }
+
+            .hero h1 {
+                font-size: 44px;
+                margin-bottom: 20px;
+            }
+
+            .hero p {
+                font-size: 18px;
+                max-width: 600px;
+                margin-bottom: 25px;
+            }
+
+        .btn {
+            padding: 14px 26px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .btn-blue {
+            background: #0B3D91;
+            color: #fff;
+        }
+
+        .btn-kakao {
+            background: #FEE500;
+            color: #000;
+        }
+
+        /* SECTION */
+        section {
+            padding: 80px 8%;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        /* CARD */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+            gap: 20px;
+        }
+
+        .card {
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,.08);
+        }
+
+        /* CLIENTS */
+        .clients {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+            gap: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+            .clients div {
+                padding: 10px;
+                background: #f5f5f5;
+                border-radius: 8px;
+            }
+
+        /* FOOTER */
+        footer {
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        /* 🔥 하단 고정 전화 버튼 */
+        .fixed-call {
+            position: fixed;
+            bottom: 15px;
+            left: 15px;
+            right: 15px;
+            background: #0B3D91;
+            color: #fff;
+            text-align: center;
+            padding: 14px;
+            border-radius: 10px;
+            font-weight: 700;
+            text-decoration: none;
+            z-index: 9999;
+        }
+
+        /* 🔥 카카오 플로팅 버튼 */
+        .kakao-float {
+            position: fixed;
+            bottom: 80px;
+            right: 15px;
+            background: #FEE500;
+            color: #000;
+            padding: 12px 14px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            z-index: 9999;
+        }
+
+        /* 모바일 */
+        @media(max-width:768px) {
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            nav {
+                display: none;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-area">
+            <img src="nakyeonglogo.png" alt="로고">
+            <div class="logo-text">나경주방</div>
+        </div>
+
+        <nav>
+            <a href="#service">서비스</a>
+            <a href="#about">회사소개</a>
+            <a href="#clients">실적</a>
+            <a href="#contact">문의</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>상업용 주방기기 전문기업</h1>
+        <p>설계 · 제작 · 시공 · A/S · 세제 납품까지 원스톱 서비스</p>
+
+        <a class="btn btn-blue" href="tel:01022289418">전화 문의</a>
+        <a class="btn btn-kakao" href="https://open.kakao.com/o/syour-link" target="_blank">카카오 상담</a>
+    </section>
+
+    <section id="service">
+        <h2 class="title">서비스</h2>
+        <div class="cards">
+            <div class="card"><h3>설계/제작</h3><p>맞춤형 주방 설계</p></div>
+            <div class="card"><h3>시공</h3><p>전문 설치팀 운영</p></div>
+            <div class="card"><h3>A/S</h3><p>신속 출장 서비스</p></div>
+            <div class="card"><h3>세제 납품</h3><p>정기 관리 시스템</p></div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="title">회사소개</h2>
+
+        <div class="about-text">
+
+            <p>
+                나경 주방은 상업용 주방기구 및 주방세제를 전문적으로 판매 하는 회사 입니다.
+            </p>
+
+            <p>
+                당사는 주식회사 스마트퀸과 협력업체를 체결하여 원할한 세제납품 및 사업장 관리를 하고 있습니다.
+            </p>
+
+            <p>
+                주방기구 설계 및 제작, 시공, A/S까지 종합적으로 할 수 있는 회사입니다. 당사는 오랫동안 단체급식의 사업장 관리경험으로 고객이 필요로 하는 것이 무엇인지를 잘 아는 회사 입니다.
+            </p>
+
+            <p>
+                당사는 월1회 이상 식기세척기 정기점검을 실시하고 있으며 년1회 이상 고압청소기 청소를 시행하여 식기 세척기를 위생적으로 관리하고 있으며 고품질 세제를 공급하고있습니다.
+            </p>
+
+        </div>
+    </section>
+
+    <section id="clients">
+        <h2 class="title">주요 납품 실적</h2>
+
+        <div class="clients">
+            <div>본푸드서비스㈜</div>
+            <div>아이비푸드</div>
+            <div>㈜한울에프앤에스</div>
+            <div>㈜다미선푸드</div>
+            <div>온자박</div>
+            <div>㈜마루원푸드</div>
+            <div>㈜가온에프앤에스</div>
+            <div>충청남도 공주의료원</div>
+            <div>충청남도 홍성의료원</div>
+            <div>SK하이닉스청주공장</div>
+            <div>삼성전자온양반도체</div>
+            <div>한국가스안전공사</div>
+            <div>삼성디스플레이(천안,탕정)</div>
+            <div>순천향대학교 부속천안병원</div>
+            <div>충북대학교병원</div>
+            <div>아이온 어린이집</div>
+            <div>고운유치원</div>
+            <div>삼성SDI청주어린이집</div>
+            <div>한국기술교육대학교</div>
+            <div>한국폴리텍대학교</div>
+            <div>선문대학교</div>
+            <div>순천향대학교</div>
+            <div>충북대학교</div>
+            <div>한국교원대학교</div>
+            <div>한국교통대학교</div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="title">문의</h2>
+        <p style="text-align:center;">
+            📞 대표 전화번호 : 010-2228-9418<br>
+            📍 충남 천안시 동남구 신촌로 24
+        </p>
+    </section>
+
+    <footer>
+        <p>© 나경주방</p>
+    </footer>
+
+    <!-- 🔥 플로팅 버튼 -->
+    <a class="kakao-float" href="https://open.kakao.com/o/syour-link" target="_blank">카카오</a>
+    <a class="fixed-call" href="tel:01022289418">
+        📞 지금 바로 상담하기
+    </a>
+
+</body>
+</html>
